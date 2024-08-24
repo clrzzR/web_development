@@ -1,0 +1,350 @@
+body{
+    background-color: #FFF6F6;
+}
+
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: #FFDFDF;
+}
+
+.home-page .image-container{
+    width: auto;
+}
+
+.home-page .greeting-content{
+    font-size: 36px;
+}
+
+.home-left-side-container{
+    padding: 30px;
+}
+
+.home-page .greeting-content{
+    padding-top: 30px;
+}
+
+.home-page .home-short-content{
+    padding-top: 70px;
+}
+
+/* SCHOOL */
+.school-container{
+    display: flex;
+    color:blue;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+/* INTRODUCTION */
+.introduction-container{
+    color: red;
+    background-color: #FFDFDF
+}
+
+/* SKILSS */
+.skills .skills-header-container{
+    color: blue;
+    text-align: center;
+}
+
+
+.skills .skills-container{
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+/* MACHINE PROBLEMS */
+.machine-problem{
+    background-color: #FFDFDF;
+}
+
+.machine-problem .mp-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+/* CONTACTS */
+
+#contact {
+    padding: 31px 0;
+}
+
+#contact .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#contact .contact-header{
+    color: #ba4b2f;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 23px;
+    line-height: 1.6;
+}
+
+#contact .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ba4b2f;
+}
+
+#contact .info-item {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+#contact .info-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#contact .info-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#contact .contact-form {
+    margin-bottom: 40px;
+}
+
+#contact .contact-form h3 {
+    font-size: 24px;
+    color: #ba4b2f;
+    font-weight: 600;
+}
+
+#contact .form-group {
+    margin-bottom: 25px;
+}
+
+#contact .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #ba4b2f;
+    font-weight: 500;
+}
+
+#contact .form-group input, 
+#contact .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #FFDFDF;
+    /* color: #fff; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #FFDFDF;
+}
+
+#contact .social-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact .social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ba4b2f;
+    font-weight: 600;
+}
+
+#contact .social-media a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ba4b2f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .social-media a:hover {
+    color: #ba4b2f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    
+    .home-page-image{
+        width: 60%;
+    }
+    #contact {
+        padding: 40px 0;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #contact p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-info {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #contact .info-item {
+        margin-bottom: 30px;
+        flex: 1 1 100%;
+    }
+
+    #contact .contact-form, 
+    #contact .social-media {
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-form h3 {
+        font-size: 22px;
+    }
+
+    #contact button[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #contact .social-media h3 {
+        font-size: 22px;
+    }
+
+    #contact .social-media a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
+
+/* try */
+
+@media (min-width: 992px) {
+    .home-page {
+        flex-wrap: nowrap;
+        /* justify-content: flex-start; */
+    }
+
+    .home-right-side-container{
+        width: 25%;
+    }
+
+    .home-page-image{
+        width: 60%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+
+    .school-container {
+        flex-wrap: nowrap;
+        /* justify-content: flex-start; */
+    }
+
+    .introduction-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .skills {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .machine-problem {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+/* === */
+
+@media (max-width: 992px) {
+    #contact {
+        padding: 40px 0;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #contact p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-info {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #contact .info-item {
+        margin-bottom: 30px;
+        flex: 1 1 100%;
+    }
+
+    #contact .contact-form, 
+    #contact .social-media {
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-form h3 {
+        font-size: 22px;
+    }
+
+    #contact button[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #contact .social-media h3 {
+        font-size: 22px;
+    }
+
+    #contact .social-media a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
