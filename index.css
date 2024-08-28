@@ -1,6 +1,19 @@
-body{
+body {
     background-color: #FFF6F6;
+    color: rgb(79, 79, 79);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 
 .home-page {
     display: flex;
@@ -16,43 +29,155 @@ body{
     width: auto;
 }
 
-.home-page .greeting-content{
-    font-size: 36px;
-}
 
 .home-left-side-container{
     padding: 30px;
 }
 
+.home-right-side-container{
+    margin-right: 110px;
+}
+
 .home-page .greeting-content{
     padding-top: 30px;
+    font-size: 60px;
 }
 
 .home-page .home-short-content{
     padding-top: 70px;
+    width: 423px;
+    
+}
+
+#home .home-page-image{
+    width: 100%;
+    height: 600px;
+    margin: 40px 0px;
+}
+
+#home .content-container{
+    padding-bottom: 70px;
+
+}
+
+#home .input-box{
+    position: relative;
+
+    
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 25%;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#home .input-box .nav-link{
+    padding: 0;
+}
+
+#dl-resume-container {
+    text-decoration: none;
+    color: white;
+}
+
+#home .input-box{
+    text-align: center;
+    outline: none;
+    background:  rgb(79, 79, 79, 0.58);
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+}
+
+#home .input-box .contact-link{
+    color: white;
+}
+
+.home-left-side-container .input-box a .nav-link{
+    color: rgb(87, 87, 87)
+}
+
+
+
+a.nav-link:focus, .nav-link:hover {
+    color: #FFDFDF;
+}
+
+/*  */
+
+#home .resume-box{
+    position: relative;
+
+    
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 25%;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#home .resume-box{
+    text-align: center;
+    outline: none;
+    background:  rgb(79, 79, 79, 0.58);
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+}
+
+#home .resume-box .contact-link{
+    color: white;
+}
+
+#home header .home-left-side-container .download-resume-container .position-absolute {
+    position: absolute;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 7px;
+    bottom: -300px;
+    font-size: 25px;
+    left: 10%;
+}
+
+/* color font for get my resume */
+.home-left-container a .download-resume-container .download-resume-button .position-absolute{
+    color: rgb(79, 79, 79);
+    text-decoration: none;
 }
 
 /* SCHOOL */
 .school-container{
     display: flex;
-    color:blue;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-evenly;
+
+    font-size: 20px;
+    padding: 20px;
 }
 
 /* INTRODUCTION */
 .introduction-container{
-    color: red;
-    background-color: #FFDFDF
+    background-color: #FFDFDF;
+    text-align: center;
+    padding: 20px;
 }
+
+.introduction-container .name{
+    font-size: 70px;
+}
+
+.introduction-container .intro-short-content{
+    padding-left: 300px;
+    text-align: center;
+    padding-right: 300px;
+    padding-bottom: 25px;
+}
+
 
 /* SKILSS */
 .skills .skills-header-container{
-    color: blue;
     text-align: center;
+    font-size: 30px;
 }
+
 
 
 .skills .skills-container{
@@ -64,6 +189,24 @@ body{
 }
 
 
+.style.carousel-item{
+    min-height: 280px;
+    max-height: 500px;
+}
+
+#myCarousel .carousel-control-next, #myCarousel .carousel-control-prev{
+    height: 100%;
+}
+
+.skill-carousel-container{
+    width: 37%;
+    margin: auto;
+}
+
+.skills .carousel-inner{
+    padding-bottom: 35px;
+}
+
 /* MACHINE PROBLEMS */
 .machine-problem{
     background-color: #FFDFDF;
@@ -72,9 +215,129 @@ body{
 .machine-problem .mp-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: flex-start;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+.machine-problem .card-body{
+    height: 115px;
+}
+
+.machine-problem .card-body .mp1-content{
+    margin-top: -9px;
+}
+
+.machine-problem .card-body .mp2-content{
+    margin-top: -9px;
+}
+
+.machine-problem .card-body .mp3-content{
+    margin-top: -9px;
+}
+
+.machine-problem .card-body .mp4-content{
+    margin-top: -9px;
+}
+
+.machine-problem .card-body .mp5-content{
+    margin-top: -9px;
+}
+
+
+.machine-problem .media-container .bionote-video{
+    aspect-ratio: 1;
+    display: none;
+}
+
+.machine-problem .media-container:hover .bionote-video{
+    display: block;
+}
+
+.machine-problem .media-container:hover .bionote-image{
+    display: none;
+    
+}
+
+.machine-problem .mp-header{
+    font-size: 30px;
+    padding-left: 82px;
+    padding-top: 25px;
+}
+
+/* == */
+.machine-problem .media-container .kotlin-video{
+    aspect-ratio: 1;
+    display: none;
+}
+
+.machine-problem .media-container:hover .kotlin-video{
+    display: block;
+
+    height:auto;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    
+    
+}
+
+.machine-problem .media-container:hover .kotlin-image{
+    display: none;
+    
+}
+
+.machine-problem .media-container .kotlin-image{
+    height:auto;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    
+}
+
+.machine-problem .media-container .game-volt-video{
+    aspect-ratio: 1;
+    display: none;
+}
+
+.machine-problem .media-container:hover .game-volt-video{
+    display: block;
+    
+}
+
+.machine-problem .media-container:hover .game-volt-image{
+    display: none;
+    
+}
+
+.machine-problem .media-container .jack-en-poy-video{
+    aspect-ratio: 1;
+    display: none;
+}
+
+.machine-problem .media-container:hover .jack-en-poy-video{
+    display: block;
+    
+}
+
+.machine-problem .media-container:hover .jack-en-poy-image{
+    display: none;
+    
+}
+
+
+.machine-problem .media-container .in-between-video{
+    aspect-ratio: 1;
+    display: none;
+}
+
+.machine-problem .media-container:hover .in-between-video{
+    display: block;
+    
+}
+
+.machine-problem .media-container:hover .in-between-image{
+    display: none;
+    
 }
 
 /* CONTACTS */
@@ -203,7 +466,7 @@ body{
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
     .home-page-image{
         width: 60%;
@@ -254,7 +517,18 @@ body{
         margin: 0 10px;
         font-size: 16px;
     }
+
+    .skill-one .m-4 .card{
+        width: 150px;
+    }
+
+    
+    .skill-carousel-container{
+        width: 95%;
+        margin: auto;
+    }
 }
+
 
 /* try */
 

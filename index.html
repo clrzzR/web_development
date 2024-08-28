@@ -8,6 +8,21 @@
 
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function downloadResume(){
+            const link = document.createElement('a');
+            link.href = 'assets/Clarizza-Reyes-Resume.pdf';
+            link.download = 'Clarizza-Reyes-Resume.pdf';
+            console.log("downloading resume");
+            link.click();
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
     <body>
 
@@ -25,9 +40,7 @@
                             <a href="#contact" class="nav-item nav-link">Messages</a>
                             <a href="#experience" class="nav-item nav-link">Works</a>
                         </div>
-                        <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link">Login</a>
-                        </div>
+                        
                     </div>
                 </div>
             </nav>
@@ -36,24 +49,32 @@
         <section id="home">
             <div class="home-page">
                 <div class="home-left-side-container">
-                    left side
+            
                     <div class="content-container">
-                        <div class="greeting-content">
+                        <div class="greeting-content poppins-bold">
                             Hello, so good to see you!
                         </div>
 
                         <div class="home-short-content">
-                            SHORT DESCRIPTION A good example of a paragraph contains a topic sentence, <br>details and a conclusion. 'There are many different kinds of animals that live in China. <br>Tigers and leopards are animals that live in China's forests in the north.<br> In the jungles, monkeys swing in the trees and elephants walk through the brush.<br> There are camels in the deserts in China that people use for transportation.<br> Lots of different kinds of animals make their home in China.
+
+                            "Innovating today, for a smarter, more connected tomorrow. Harnessing technology to bridge gaps and create solutions that empower the future."
                         </div>
                     </div>
 
-                    <div class="home-contact-container">
-                        contact container
+                    <div class="input-box">
+                        <a href="#contact" class="nav-item nav-link contact-link">Contact</a>
                     </div>
+
+                    <div class="resume-box">
+                        <div class="download-resume-container">
+                            <a id="dl-resume-container" href="assets/Clarizza-Reyes-Resume.zip" download class="download-resume-button" style="left: 8%">Get my Resume</a>
+                        </div>    
+                    </div>
+
                 </div>
 
                 <div class="home-right-side-container">
-                    right side IMAGE
+                  
                     <div class="image-container">
                         <img class="home-page-image" src="assets/image_5.jpg" style="width: 100%;">        
                     </div>
@@ -62,8 +83,8 @@
         </section>
         
 
-        <div class="school-container">
-            <div class="high-school">
+        <div class="school-container .poppins-bold">
+            <div class="high-school ">
                 Sta. Catalina College
             </div>
 
@@ -75,89 +96,32 @@
         
         <section id="profile">
             <div class="introduction-container">
-                <div class="name">
+                <div class="name poppins-bold">
                     CLARIZZA
                 </div>
                 <div class="intro-short-content">
-                    short content
+                  
+
+                    A third-year Computer Engineering student at the University of the East Manila, dedicated to developing innovative and efficient technological solutions. My academic journey, complemented by hands-on experience in software development and embedded systems, has equipped me with a strong foundation in programming, system design, and project management. I am passionate about leveraging my skills in engineering to contribute to meaningful projects that drive technological advancement. I aim to collaborate with industry leaders and continuously expand my knowledge, ultimately pursuing a career in software engineering, embedded systems, or related fields where I can apply my expertise to solve real-world challenges. My involvement in various seminars and collaborations, alongside my personal interests, reflects my commitment to professional growth and holistic development.
+
                 </div>
             </div>
         </section>
 
         <div class="skills">
-            
-            <div class="skills-header-container">
+
+            <div class="skills-header-container .poppins-bold">
                 SKILLS
             </div>
 
-            <style>.carousel-item{
-                min-height: 280px;
-                max-height: 500px;
-            }
-            </style>
-
-            <div class="container-lg my-3">
-                <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                    </ol>
-                    
-                    <!-- Wrapper for carousel items -->
-                    <div class="carousel-inner">
-                        
-                        <div class="carousel-item active">
-                            <img src="assets/image_7.png" class="d-block w-100" alt="Slide 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some demonstrative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/image_8.png" class="d-block w-100" alt="Slide 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some demonstrative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/image_9.png" class="d-block w-100" alt="Slide 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some demonstrative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-                
-                <!-- <div class="alert alert-info mt-3">
-                    Carousel caption will be hidden on smaller viewport, but become visible on medium devices (i.e. viewport width &ge;768px). Change orientation of this HTML editor to see how it works. 
-                </div> -->
-            </div>
-
-            <div class="skills-header-container">
-                SKILLS
-            </div>
-<!--  -->
             <div class="skills-container">
                 <div class="skill-one">
                     <div class="m-4">
-                        <div class="card" style="width: 300px;">
+                        <div class="card" style="width: 180px;">
                             <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Python</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -165,12 +129,10 @@
 
                 <div class="skill-two">
                     <div class="m-4">
-                        <div class="card" style="width: 300px;">
-                            <img src="assets/image_2.jpg" class="card-img-top" alt="Sample Image">
+                        <div class="card" style="width: 180px;">
+                            <img src="assets/image_2.png" class="card-img-top" alt="Sample Image">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Java</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
                             </div>
                         </div>
                     </div>
@@ -178,12 +140,10 @@
 
                 <div class="skill-three">
                     <div class="m-4">
-                        <div class="card" style="width: 300px;">
-                            <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
+                        <div class="card" style="width: 180px;">
+                            <img src="assets/image_3.jpg" class="card-img-top" alt="Sample Image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Object Oriented Programming</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
+                                <h5 class="card-title">HTML/CSS</h5>
                             </div>
                         </div>
                     </div>
@@ -191,41 +151,73 @@
 
                 <div class="skill-four">
                     <div class="m-4">
-                        <div class="card" style="width: 300px;">
-                            <img src="assets/image_2.jpg" class="card-img-top" alt="Sample Image">
+                        <div class="card" style="width: 180px;">
+                            <img src="assets/image_4.jpg" class="card-img-top" alt="Sample Image">
                             <div class="card-body text-center">
-                                <h5 class="card-title">CSS</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
+                                <h5 class="card-title">SQL</h5>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="skill-five">
-                    <div class="m-4">
-                        <div class="card" style="width: 300px;">
-                            <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Object Oriented Programming</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
+            <div class="skills-header-container .poppins-bold">
+                Certificates
+            </div>
+
+            <div class="skill-carousel-container">
+                <div class="container-lg my-3">
+                    <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+                        </ol>
+                        
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/certificate_1.png" class="d-block w-100" alt="Slide 1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/certificate_2.png" class="d-block w-100" alt="Slide 2">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/certificate_3.png" class="d-block w-100" alt="Slide 3">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/certificate_3.png" class="d-block w-100" alt="Slide 4">
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="assets/certificate_4.png" class="d-block w-100" alt="Slide 5">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/certificate_5.png" class="d-block w-100" alt="Slide 6">
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="assets/certificate_6.png" class="d-block w-100" alt="Slide 7">
                             </div>
                         </div>
+    
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
                     </div>
-                </div>
-
-                <div class="skill-six">
-                    <div class="m-4">
-                        <div class="card" style="width: 300px;">
-                            <img src="assets/image_2.jpg" class="card-img-top" alt="Sample Image">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Object Oriented Programming</h5>
-                                <!-- <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                <a href="#" class="btn btn-primary">View Profile</a> -->
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -233,7 +225,7 @@
 
         <section id="experience">
             <div class="machine-problem">
-                <div class="mp-header">
+                <div class="mp-header .poppins-bold">
                     MACHINE PROBLEMS
                 </div>
 
@@ -241,12 +233,23 @@
                     <div class="mp1">
                         <div class="skill-one">
                             <div class="m-4">
-                                <div class="card" style="width: 300px;">
-                                    <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
+                                <div class="card" style="width: 420px;">
+                                    
+                                    <div class="media-container">
+                                        <img src="assets/sc_image_1.png" class="card-img-top bionote-image" alt="Sample Image">
+
+                                        <video autoplay loop muted class="card-img-top bionote-video" alt="Sample Video">
+                                            <source src="assets/sc_bionote.mp4" type="video/mp4" >
+                                        </video>
+                                        
+
+                                    </div>
+                                    
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                        <a href="#" class="btn btn-primary">View Profile</a>
+                                        <div class="mp1-content">
+                                            <h5 class="card-title">BioNote</h5>
+                                            <p class="card-text">Junior Year<br>Machine Problem 1<br>Aug 8-15, 2024</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -256,13 +259,26 @@
                     <div class="mp2">
                         <div class="skill-one">
                             <div class="m-4">
-                                <div class="card" style="width: 300px;">
-                                    <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                        <a href="#" class="btn btn-primary">View Profile</a>
+                                <div class="card" style="width: 320px;">
+
+                                    <div class="media-container">
+                                        <img src="assets/sc_image_2.png" class="card-img-top kotlin-image" alt="Sample Image">
+
+                                        <video autoplay loop muted class="card-img-top kotlin-video" alt="Sample Video">
+                                            <source src="assets/sc_kotlin.mp4" type="video/mp4" >
+                                        </video>
+
                                     </div>
+                                    
+                                    <div class="card-body text-center">
+                                        <div class="mp2-content">
+                                            <h5 class="card-title">Kotlin</h5>
+                                            <p class="card-text">Sophamore Year<br>Machine Problem 1<br>Oct 24, 2023</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </div>                    
@@ -271,12 +287,22 @@
                     <div class="mp3">
                         <div class="skill-one">
                             <div class="m-4">
-                                <div class="card" style="width: 300px;">
-                                    <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
+                                <div class="card" style="width: 420px;">
+                                    <div class="media-container">
+                                        <img src="assets/sc_image_3.png" class="card-img-top game-volt-image" alt="Sample Image">
+
+                                        <video autoplay loop muted class="card-img-top game-volt-video" alt="Sample Video">
+                                            <source src="assets/sc_GameVault.mp4" type="video/mp4" >
+                                        </video>
+
+                                    </div>
+                                    
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                        <a href="#" class="btn btn-primary">View Profile</a>
+                                        <div class="mp3-content">
+                                            <h5 class="card-title">Game Volt</h5>
+                                            <p class="card-text">Sophamore Year<br>Machine Problem 3<br>May 23, 2023</p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -286,12 +312,22 @@
                     <div class="mp4">
                         <div class="skill-one">
                             <div class="m-4">
-                                <div class="card" style="width: 300px;">
-                                    <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
+                                <div class="card" style="width: 420px;">
+                                    <div class="media-container">
+                                        <img src="assets/sc_image_4.png" class="card-img-top jack-en-poy-image" alt="Sample Image">
+
+                                        <video autoplay loop muted class="card-img-top jack-en-poy-video" alt="Sample Video">
+                                            <source src="assets/sc_jack-en-poy.mp4" type="video/mp4" >
+                                        </video>
+
+                                    </div>
+                                    
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                        <a href="#" class="btn btn-primary">View Profile</a>
+                                        <div class="mp4-content">
+                                            <h5 class="card-title">Jack N Poy</h5>
+                                            <p class="card-text">Sophamore Year<br>Machine Problem 3<br>May 23, 2023</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -301,12 +337,22 @@
                     <div class="mp5">
                         <div class="skill-one">
                             <div class="m-4">
-                                <div class="card" style="width: 300px;">
-                                    <img src="assets/image_1.jpg" class="card-img-top" alt="Sample Image">
+                                <div class="card" style="width: 420px;">
+                                    <div class="media-container">
+                                        <img src="assets/sc_image_5.png" class="card-img-top in-between-image" alt="Sample Image">
+
+                                        <video autoplay loop muted class="card-img-top in-between-video" alt="Sample Video">
+                                            <source src="assets/sc_in-between.mp4" type="video/mp4" >
+                                        </video>
+
+                                    </div>
+                                    
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-                                        <a href="#" class="btn btn-primary">View Profile</a>
+                                        <div class="mp5-content">
+                                            <h5 class="card-title">In Between</h5>
+                                            <p class="card-text">Sophamore Year<br>Machine Problem 3<br>May 23, 2023</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -384,7 +430,7 @@
                 <div class="social-media">
                     <h3>Follow Me</h3>
                     <a href="http://m.me/klareizuhh?hash=AbZtbieHED2erbUW&source_id=6946816" target="_blank">Messenger</a>
-                    <a href="https://github.com/miiikunnn" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/riez_zza/" target="_blank">Instagram</a>
                     <a href="https://github.com/clrzzR" target="_blank">Github</a>
                 </div>
             </div>
