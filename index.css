@@ -5,6 +5,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+
+    font-size: 15px;
 }
 
 .poppins-bold {
@@ -56,6 +58,7 @@ body {
 }
 
 #home .content-container{
+    padding-top: 50px;
     padding-bottom: 70px;
 
 }
@@ -176,9 +179,19 @@ a.nav-link:focus, .nav-link:hover {
 .skills .skills-header-container{
     text-align: center;
     font-size: 30px;
+
 }
 
+.skills .skills-header-container-2{
+    text-align: center;
+    font-size: 30px;
+    background-color: #FFDFDF;
+}
 
+.skills .skill-carousel-container-1{
+    
+    background-color: #FFDFDF
+}
 
 .skills .skills-container{
     display: flex;    
@@ -208,15 +221,20 @@ a.nav-link:focus, .nav-link:hover {
 }
 
 /* MACHINE PROBLEMS */
-.machine-problem{
+/* .machine-problem{
     background-color: #FFDFDF;
-}
+} */
 
 .machine-problem .mp-container{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-evenly;
+}
+
+.machine-problem .mp-content-container{
+    
+    background-color:  #FFDFDF;
 }
 
 .machine-problem .card-body{
@@ -340,6 +358,28 @@ a.nav-link:focus, .nav-link:hover {
     
 }
 
+.machine-problem .mp-content-container{
+    
+    padding: 47px;
+    display: flex;
+    width: 97%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: stretch;
+
+}
+
+#experience .machine-problem .mp-content-container .mp-title{
+    font-size: 25px;
+}
+
+#experience .machine-problem .mp-content-container .mp-description{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 10px;
+}
+
 /* CONTACTS */
 
 #contact {
@@ -353,7 +393,7 @@ a.nav-link:focus, .nav-link:hover {
 }
 
 #contact .contact-header{
-    color: #ba4b2f;
+   
 }
 
 #contact h2 {
@@ -373,7 +413,7 @@ a.nav-link:focus, .nav-link:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: #ba4b2f;
+    
 }
 
 #contact .info-item {
@@ -398,7 +438,7 @@ a.nav-link:focus, .nav-link:hover {
 
 #contact .contact-form h3 {
     font-size: 24px;
-    color: #ba4b2f;
+    
     font-weight: 600;
 }
 
@@ -409,7 +449,7 @@ a.nav-link:focus, .nav-link:hover {
 #contact .form-group label {
     display: block;
     font-size: 16px;
-    color: #ba4b2f;
+
     font-weight: 500;
 }
 
@@ -449,20 +489,43 @@ a.nav-link:focus, .nav-link:hover {
 #contact .social-media h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #ba4b2f;
+    
     font-weight: 600;
 }
 
 #contact .social-media a {
     margin: 0 15px;
     font-size: 18px;
-    color: #ba4b2f;
+   
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #contact .social-media a:hover {
-    color: #ba4b2f;
+    
+}
+
+#contact .info-item .b-info-item-number a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+
+#contact .info-item .c-info-item-email-address a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+
+.social-media a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+
+
+footer {
+    background-color: #FFDFDF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
 }
 
 /* Responsive Styles */
